@@ -77,6 +77,8 @@ class HomeController extends Controller
         
         if ($num2 === 0){
             logger()->error('Divisor zero');
+        }else{
+            logger()->info('Div feita');
         }
 
 
