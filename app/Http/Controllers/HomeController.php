@@ -57,10 +57,10 @@ class HomeController extends Controller
     public function mult ($num1, $num2)
     {
         $mult = $num1 * $num2;
-        logger()->warning('Sub feita ', compact('num1', 'num2', 'sub'));
+        
 
         
-        if ($mult < 0){
+        if ($num1 < 0 || $num2 <0){
             logger()->warning(('Negativo'));
         }
 
